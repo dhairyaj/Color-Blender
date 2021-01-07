@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body id="bodybg">
-    <div class="container">
+    <!-- <div class="container">
         <h1>Color Blender</h1><br><br>
         <div class="color">
             <input type="color" name="color1" id="color1">
@@ -16,6 +16,31 @@
         <div class="output">
             <h3><p id="copytext"></p></h3>
         </div>
+    </div> -->
+
+    <div class="container">
+        <h2>Generate a CSS Color Gradient</h2><br><br>
+        <div class="colorSelect">
+            <h3>Select Colors</h3><br>
+            <input type="color" name="color1" id="color1" value="#235196">
+            <input type="color" name="color2" id="color2" value="#A8EB12">
+            
+            <!-- <button><label for="color2">Click Me</label></button> -->
+        </div><br>
+        <div class="orientation">
+            <label for="orientationSelect">Select Orientation Type:&nbsp;</label>
+            <select id="orientationSelect" name="orientationSelect">
+                <option value="0">Linear</option>
+                <option value="1">Radial</option>
+            </select><br><br>
+            <div id="sliderDiv">
+                <input type="range" min="-180" max="190" value="90" class="slider" id="linearDegree"> 
+            </div>
+        </div><br>
+        <div class="codeSnippet">
+            <h4><p id="copyCode">linear-gradient(to right, #235196, #A8EB12)</p></h4>
+        </div>
+
     </div>
 
     <script src="./assets/main.js"></script>
