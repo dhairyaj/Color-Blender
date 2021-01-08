@@ -5,34 +5,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Blender</title>
+    <!--Link custon CSS stylesheet-->
     <link rel="stylesheet" href="./assets/styles.css" />
 </head>
 
 <body id="bodybg">
-    <!-- <div class="container">
-        <h1>Color Blender</h1><br><br>
-        <div class="color">
-            <input type="color" name="color1" id="color1">
-            <input type="color" name="color2" id="color2">
-        </div><br><br>
-        <div class="output">
-            <h3><p id="copytext"></p></h3>
-        </div>
-    </div> -->
-
     <div class="container">
         <h2>Generate a CSS Color Gradient</h2>
         <br /><br />
 
+        <!--Color Pickers-->
+
         <div class="colorSelect">
             <h5>Select Colors</h5>
             <br />
-            <input type="color" name="color1" id="color1" value="#235196" style="opacity: 0; visibility: hidden; position: absolute;"  />
-            <input type="color" name="color2" id="color2" value="#A8EB12" style="opacity: 0; visibility: hidden; position: absolute;"/>
+            <input type="color" name="color1" id="color1" value="#235196"
+                style="opacity: 0; visibility: hidden; position: absolute" />
+            <input type="color" name="color2" id="color2" value="#A8EB12"
+                style="opacity: 0; visibility: hidden; position: absolute" />
             <button><label for="color1" id="color1text">#235196</label></button>
             <button><label for="color2" id="color2text">#A8EB12</label></button>
         </div>
-        <br /><br>
+        <br /><br />
+
+        <!--Orientation Type-->
 
         <div class="orientation">
             <label for="orientationSelect">Select Orientation Type:&nbsp;&nbsp;</label>
@@ -41,12 +37,16 @@
                 <option value="1">Radial</option>
             </select><br /><br />
 
+            <!--Orientation Slider-->
+
             <div id="sliderDiv">
                 <input type="range" min="-180" max="180" value="90" class="slider" id="linearDegree" />
                 <p>Degree:&nbsp;&nbsp;<span id="degreeValue"></span></p>
             </div>
         </div>
-        <br /><br /><br /><br /><br /><br><br><br><br><br><br><br>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+        <!--CSS Code-->
 
         <div class="codeSnippet">
             <h5 id="copyCode">
@@ -54,6 +54,8 @@
             </h5>
         </div>
     </div>
+
+    <!--Custom JavaScript File-->
 
     <script src="./assets/main.js"></script>
 </body>
