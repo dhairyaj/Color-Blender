@@ -26,24 +26,15 @@ h6 {
 }
 
 input,
-select {
+select,
+button {
   outline: none;
 }
 
 input:focus,
-select:focus {
+select:focus,
+button:focus {
   outline: none;
-}
-
-.container {
-  width: 100%;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: beige;
-  text-shadow: 3px 3px #000000;
 }
 
 #bodybg {
@@ -53,14 +44,65 @@ select:focus {
   background: linear-gradient(90deg, #235196, #a8eb12);
 }
 
-.orientation label,
-.orientation option {
-  font-size: large;
-  text-shadow: none;
+.container {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container h2 {
+  color: rgba(255,255,255,0.9);
+  text-shadow: 3px 3px #000000;
+}
+
+.colorSelect {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.colorSelect h5 {
+  color: rgba(255,255,255,0.9);
+}
+
+.colorSelect button {
+  font-size: 3rem;
+  width: 15rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 2rem;
+  border: none;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.342);
+}
+
+.colorSelect label {
+  font-size: 2.5rem;
+}
+
+.colorSelect button:hover {
+  transform: scale(1.1);
+}
+
+.orientation label {
+  font-size: 2.5rem;
+  color: rgba(255,255,255,0.9);
 }
 
 .orientation select {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px dotted rgba(255,255,255,0.9);
+  color: rgba(255,255,255,0.9);
+  margin-left: 1rem;
+}
+
+.orientation option {
   font-size: medium;
+  color: black
 }
 
 .slider {
@@ -84,7 +126,7 @@ select:focus {
   appearance: none;
   width: 1.5rem;
   height: 1.5rem;
-  background: beige;
+  background: white;
   cursor: pointer;
   border-radius: 50%;
 }
@@ -101,8 +143,8 @@ select:focus {
 }
 
 #sliderDiv p, #sliderDiv span {
-    font-size: 1.5rem;
-    text-shadow: none;
+    font-size: 2rem;
+    color: rgba(255,255,255,0.9);
 }
 
 .codeSnippet {
