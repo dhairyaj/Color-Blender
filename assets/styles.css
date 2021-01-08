@@ -96,6 +96,10 @@ select:focus {
   cursor: pointer;
 }
 
+#sliderDiv {
+  display: block;
+}
+
 #sliderDiv p, #sliderDiv span {
     font-size: 1.5rem;
     text-shadow: none;
