@@ -30,13 +30,13 @@ function setGradient() {
     colortext1.textContent = color1.value.toString().toUpperCase();
     colortext2.textContent = color2.value.toString().toUpperCase();;
     bodybg.style.background = `linear-gradient(${slider.value}deg, ${color1.value.toString().toUpperCase()}, ${color2.value.toString().toUpperCase()})`;
-    copyCode.textContent = `linear-gradient(${slider.value}deg, ${color1.value.toString().toUpperCase()}, ${color2.value.toString().toUpperCase()})`;
+    copyCode.textContent = `background: linear-gradient(${slider.value}deg, ${color1.value.toString().toUpperCase()}, ${color2.value.toString().toUpperCase()})`;
 
   } else if(orientationSelect.value == 1) {
     colortext1.textContent = color1.value;
     colortext2.textContent = color2.value;
     bodybg.style.background = `radial-gradient(${color1.value.toString().toUpperCase()}, ${color2.value.toString().toUpperCase()})`;
-    copyCode.textContent = `radial-gradient(${color1.value.toString().toUpperCase()}, ${color2.value.toString().toUpperCase()})`;
+    copyCode.textContent = `background: radial-gradient(${color1.value.toString().toUpperCase()}, ${color2.value.toString().toUpperCase()})`;
 
   }
 
