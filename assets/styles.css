@@ -1,3 +1,4 @@
+/*Reset Global styles*/
 *,
 *::after,
 *::before {
@@ -37,6 +38,7 @@ button:focus {
   outline: none;
 }
 
+/*Set Body Styles*/
 #bodybg {
   width: 100%;
   height: 100vh;
@@ -44,6 +46,7 @@ button:focus {
   background: linear-gradient(90deg, #235196, #a8eb12);
 }
 
+/*Set Container Styles*/
 .container {
   width: 100%;
   position: absolute;
@@ -58,6 +61,7 @@ button:focus {
   text-shadow: 3px 3px #000000;
 }
 
+/*Set Color picker*/
 .colorSelect {
   margin-top: 2%;
   margin-bottom: 2%;
@@ -86,6 +90,7 @@ button:focus {
   transform: scale(1.1);
 }
 
+/*Set Orientation type*/
 .orientation label {
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.9);
@@ -105,6 +110,7 @@ button:focus {
   color: black;
 }
 
+/*Set Orientation slider*/
 .slider {
   -webkit-appearance: none;
   width: 40%;
@@ -148,6 +154,7 @@ button:focus {
   color: rgba(255, 255, 255, 0.9);
 }
 
+/*Set CSS code*/
 .codeSnippet {
   background-color: rgba(255, 255, 255, 0.8);
   width: 70%;
